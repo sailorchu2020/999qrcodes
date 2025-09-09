@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>999qrcodes</title>
+  <link href="general.css" rel="stylesheet" type="text/css" media="all">
+  <link href="header.css" rel="stylesheet" type="text/css" media="all">
+  <link href="main.css" rel="stylesheet" type="text/css" media="all">
+  <link href="images.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body>
+  <header class="header">
+    <h1 class="title">
+      <a href='/index.html'>999qrcodes</a>
+    </h1>
+    <nav class="nav">
+      <audio id="sfx-dame" src="https://file.garden/aK6D_4rNmwUaQZg6/audio/dame.mp3" type="audio/mpeg" preload="auto"></audio>
+      <audio id="sfx-muri" src="https://file.garden/aK6D_4rNmwUaQZg6/audio/muri.mp3" type="audio/mpeg" preload="auto"></audio>
+      <button onclick="document.location='about.html'" class="nav-button">
+        About
+      </button>
+      <button onclick="playDame()"class="nav-button">
+        Works
+      </button>
+      <button onclick="document.location='interests.html'" class="nav-button">
+        Interests
+      </button>
+      <button onclick="document.location='blog.html'" class="nav-button">
+        Blog
+      </button>
+    </nav>
+  </header>
+  <main class="content">
+    <section class="box-heading">
+      <p class="heading">About</p>
+    </section>
+    <section class="main-grid">
+      <section class="left-top">
+        <div class="box-tab">
+          Likes
+        </div>
+        <div class="side-content">
+          <ul class="list">
+            <li>Cats</li>
+            <li>Chocolate</li>
+            <li>Story-based games</li>
+            <li>Keyboard instruments</li>
+            <li>Thinking</li>
+            <li>Bowling</li>
+          </ul>
+        </div>
+      </section>
+      <section class="left-bottom">
+        <div class="box-tab">
+          Find me
+        </div>
+        <div class="side-content">
+          <ul class="list">
+            <li><a href="https://neocities.org/site/999qrcodes" target="_blank">Neocities profile</a></li>
+            <li>Email: sailorchu2020@gmail.com</li>
+          </ul>
+        </div>
+      </section>
+      <section class="right-top">
+        <div class="box-tab">
+          Music Player
+        </div>
+        <div id="music-player" class="side-content">
+          <div class="music-player">
+            <img class="music-pic" src="pictures/lillienebby-cover.png">
+          </div>
+          <audio id="lillies-theme" src="https://file.garden/aK6D_4rNmwUaQZg6/audio/lillies-theme.mp3" type="audio/mpeg" controls loop></audio>
+          <marquee behavior="scroll" direction="left" scrollamount="6" loop>Now playing: Lillie's Theme (Pokémon Sun and Moon OST)</marquee>
+        </div>        
+      </section>
+      <section class="right-bottom">
+        <div class="box-tab">
+          <br>
+        </div>
+        <div id="music-player" class="side-content">
+          <img src="decorations/madotsukichairbounce.gif" class="decoration">
+        </div>
+      </section>
+      <div class="main-center">
+        <div class="box-tab">
+          Nice to meet you!
+        </div>
+        <div class="about-center-grid">
+          <div class="main-center-top">
+            <div class="box-tab">
+              About me
+            </div>
+            <div class="main-content">
+              I'm Q, a 17-year-old high school girl from California hoping to learn more about the wonders of programming and graphic design. Coding has been an interest of mine for a couple of years now, and I plan to pursue it professionally in the future through frontend development or software engineering. Truthfully, coding is something that's quite intimidating for me, but I hope to reduce that feeling each time I open VS Code to update this site! I'm highly inexperienced when it comes to having a good website, so please feel free to contact me if you have any suggestions or tips about making this be the best it can possibly be! Other than that, I intend to use this site as a way to express my interests and show off stuff that I've made to anyone who cares enough about it. Currently, there are still several pages that I plan to add in the future, so stay tuned for them!
+            </div>
+          </div>
+          <div class="main-center-bottom">
+            <div class="box-tab">
+              About the site
+            </div>
+            <div class="main-content">
+              This site was first created on November 6, 2023. I heard about Neocities through the YouTube video <a href="https://youtu.be/ZaYioM_bsb0?si=PjEJHXAxi-L-fNln" target="_blank"><em>Hey Peebrain, You Teleport? Tumblr's Dark Mystery</em></a> from <a href="https://www.youtube.com/@Izzzyzzz" target="_blank">Izzzyzzz</a>. This video made a huge impression on me, and it pushed me to create my own site on Neocities, albeit not an angelic ARG. I tried learning HTML/CSS for a little while until I completely lost interest... Fast forward to 2025, where I'm considering following a career in the world of computer science. I recalled this little place I had going on in Neocities. So, here we are! My goal is to make this website a project that I can be proud of, and to have something that I can consistently update for fun.
+            </div>
+          </div>
+      </div>
+    </div>
+    </section>
+    <section class="footer">
+      <marquee behavior="scroll" direction="left" scrollamount="6" loop>
+        <img class="identity-button" src="buttons/pronouns.png">
+        <img class="identity-button" src="buttons/filipino.png">  
+        <img class="identity-button" src="buttons/american.png">
+        <img class="identity-button" src="buttons/gemini.png">
+        <img class="identity-button" src="buttons/lefty.png">
+        <img class="identity-button" src="buttons/catowner.png">
+      </marquee>
+    </section>
+  </main>
+</body>
+
+<script>
+function playDame() {
+  let audio = document.getElementById("sfx-dame");
+  audio.volume = 0.1; 
+  audio.currentTime = 0;
+  audio.play();
+}
+function playMuri() {
+  let audio = document.getElementById("sfx-muri");
+  audio.volume = 0.1;
+  audio.currentTime = 0;
+  audio.play();
+}
+
+</script>
+
+</html>

@@ -1,0 +1,152 @@
+@font-face {
+    font-family: 'sawarabi_gothicregular';
+    src: url('fonts/sawarabigothic/sawarabigothic-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'vigaregular';
+    src: url('fonts/viga/viga-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'londrinasolid';
+    src: url('fonts/londrinasolid/londrinasolid-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'yume';
+    src: url('fonts/yumenikkititlescreen-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'yume2';
+    src: url('fonts/yume-nikki-px.otf.woff2/yume-nikki-px.otf.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+  --dk-color: #5b3c5a;
+  --mid-color: #fecee7;
+  --lt-color: #ffecf6;
+  --dkest-color: #1f0713;
+  --blk-color: #000408;
+  --accent: #3c0308;
+}
+
+body {
+  margin: 0;
+  padding-top: 108px;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-bottom: 2%;
+  background-color: var(--dk-color);
+  background-image: url("../backgrounds/index.png");
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: 36px;
+}
+
+@media (max-width: 850px) {
+  body {
+    padding: 108px 6px 6px 6px;
+  }
+}
+
+p {
+  font-family: 'sawarabi_gothicregular', 'Garamond';
+  margin: 0;
+  color: var(--dkest-color);
+  font-size: 1rem;
+  overflow: hidden;
+  word-break: break-word;
+  box-sizing: border-box;
+}
+
+hr {
+  width: 95%;
+  height: 1px;
+  background-color: var(--dk-color);
+  border: none;
+  flex-shrink: 0;
+  margin: 9px 0px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 0px;
+  height: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(82, 72, 99, 0.25);
+  padding: 3px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(82, 72, 99, 0.5);
+  border-radius: 4px;
+  margin: 2px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  background-color: var(--mid-color);
+}
+
+a:hover,
+button:hover {
+  cursor: pointer;
+}
+
+.list {
+  margin: 12px 0px;
+  padding: 0 9px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  word-break: break-word;
+}
+
+li {
+  position: relative;
+  padding-left: 1.2em;
+  line-height: 1rem;
+  margin-bottom: 18px;
+}
+
+li::before {
+  content: "◉";
+  font-size: 0.5rem;
+  position: absolute;
+  left: 0;
+  top: 0.1em;
+}
+
+.scroll-content {
+  overflow-y: auto;
+  max-height: 518px;
+}
+
+@media (max-width: 1020px) {
+  .scroll-content {
+    max-height: 500px;
+  }
+}
+
+@media (max-width: 350px) {
+  .scroll-content {
+    max-height: 500px;
+  }
+}

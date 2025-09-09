@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>999qrcodes</title>
+  <link href="general.css" rel="stylesheet" type="text/css" media="all">
+  <link href="header.css" rel="stylesheet" type="text/css" media="all">
+  <link href="main.css" rel="stylesheet" type="text/css" media="all">
+  <link href="images.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body>
+  <header class="header">
+    <h1 class="title">
+      <a href='/index.html'>999qrcodes</a>
+    </h1>
+    <nav class="nav">
+      <audio id="sfx-dame" src="https://file.garden/aK6D_4rNmwUaQZg6/audio/dame.mp3" type="audio/mpeg" preload="auto"></audio>
+      <audio id="sfx-muri" src="https://file.garden/aK6D_4rNmwUaQZg6/audio/muri.mp3" type="audio/mpeg" preload="auto"></audio>
+      <button onclick="document.location='about.html'" class="nav-button">
+        About
+      </button>
+      <button onclick="playDame()"class="nav-button">
+        Works
+      </button>
+      <button onclick="document.location='interests.html'" class="nav-button">
+        Interests
+      </button>
+      <button onclick="document.location='blog.html'" class="nav-button">
+        Blog
+      </button>
+    </nav>
+  </header>
+  <main class="content">
+    <section class="box-heading">
+      <p class="heading">Home</p>
+    </section>
+    <section class="main-grid">
+      <section class="left-top">
+        <div class="box-tab">
+          Notice
+        </div>
+        <div class="side-content">
+          <p>I'm optimizing this website for mobile screens! If any problems arise, please contact me through email (sailorchu2020@gmail.com) or post a message on my <a href="https://neocities.org/site/999qrcodes" target="_blank">Neocities profile</a>.</p>
+        </div>
+      </section>
+      <section class="left-bottom">
+        <div class="box-tab">
+          Featured
+        </div>
+        <div id="featured" class="side-content">
+          <img class="content-pic" src="pictures/ionmax.png">
+          <a href="https://www.stormbowling.com/storm-ion-max-bowling-ball" target="_blank"><p>Storm Ion Max</p></a>
+        </div>
+      </section>
+      <section class="right-top">
+        <div class="box-tab">
+          Music Player
+        </div>
+        <div id="music-player" class="side-content">
+          <div class="music-player">
+            <img class="music-pic" src="pictures/yumeost.png">
+          </div>
+          <audio id="bgm-ponico" src="https://file.garden/aK6D_4rNmwUaQZg6/audio/ponico.mp3" type="audio/mpeg" controls loop></audio>
+          <marquee behavior="scroll" direction="left" scrollamount="6" loop>Now playing: Ponico (Yume Nikki Soundtrack -Dream Sounds-) by Kikiyama</marquee>
+        </div>        
+      </section>
+      <section class="right-bottom">
+        <div class="box-tab">
+          Updates
+        </div>
+        <div id="updates" class="side-content">
+          <p><strong>August 28, 2025:</strong> <a href="blog.html">Blog</a> released!</p>
+          <p><strong>August 25, 2025:</strong> New Index + <a href="about.html">About</a> released!</p>
+        </div>
+      </section>
+      <div class="main-center">
+        <div class="box-tab">
+          Welcome
+        </div>
+        <div class="main-center-grid">
+          <div id="main-center-top" class="main-center-top">
+            <p>Welcome to my website. I'm 999qrcodes, or Q for short! I want to learn how to code, so I have this little site here in hopes of learning <strong>a <em>lot</em>!</strong></p>
+            <img class="right-pic" src="/pictures/mrmewsit.png">
+          </div>
+          <div class="main-center-bottom-left">
+            <div class="box-tab">
+              Bio
+            </div>
+            <div class="main-content">
+              The goal of this site is for me to learn HTML and CSS in a fun way that interests me! For more info about me and the site, click <a href="/about.html">here</a>.
+            </div>
+          </div>
+          <div class="main-center-bottom-right">
+            <div class="box-tab">
+              I am...
+            </div>
+            <div class="main-content">
+              OK!
+            </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    <section class="footer">
+      <marquee behavior="scroll" direction="left" scrollamount="6" loop>
+        <img class="decorative-button" src="buttons/yumenikki.gif">
+        <img class="decorative-button" src="buttons/teto.gif">
+        <img class="decorative-button" src="buttons/madoshirt.png">  
+        <img class="decorative-button" src="buttons/tetoterritory.gif">
+        <img class="decorative-button" src="buttons/madostairs.gif">
+        <img class="decorative-button" src="buttons/godish.gif">
+        <img class="decorative-button" src="buttons/neocities2.png">
+        <img class="decorative-button" src="buttons/vscode.png">
+      </marquee>
+    </section>
+  </main>
+</body>
+
+<script>
+function playDame() {
+  let audio = document.getElementById("sfx-dame");
+  audio.volume = 0.1; 
+  audio.currentTime = 0;
+  audio.play();
+}
+function playMuri() {
+  let audio = document.getElementById("sfx-muri");
+  audio.volume = 0.1;
+  audio.currentTime = 0;
+  audio.play();
+}
+
+function playPonico() {
+  const audio = document.getElementById("bgm-ponico");
+  audio.volume = 0.0;
+  audio.loop = true; 
+  audio.currentTime = 0;
+  audio.play();
+}
+</script>
+
+</html>

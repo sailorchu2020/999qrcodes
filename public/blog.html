@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>999qrcodes</title>
+  <link href="general.css" rel="stylesheet" type="text/css" media="all">
+  <link href="header.css" rel="stylesheet" type="text/css" media="all">
+  <link href="main.css" rel="stylesheet" type="text/css" media="all">
+  <link href="images.css" rel="stylesheet" type="text/css" media="all">
+  <link href="blog.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body>
+  <header class="header">
+    <h1 class="title">
+      <a href='/index.html'>999qrcodes</a>
+    </h1>
+    <nav class="nav">
+      <audio id="sfx-dame" src="https://file.garden/aK6D_4rNmwUaQZg6/audio/dame.mp3" type="audio/mpeg" preload="auto"></audio>
+      <audio id="sfx-muri" src="https://file.garden/aK6D_4rNmwUaQZg6/audio/muri.mp3" type="audio/mpeg" preload="auto"></audio>
+      <button onclick="document.location='about.html'" class="nav-button">
+        About
+      </button>
+      <button onclick="playDame()"class="nav-button">
+        Works
+      </button>
+      <button onclick="document.location='interests.html'" class="nav-button">
+        Interests
+      </button>
+      <button onclick="document.location='blog.html'" class="nav-button">
+        Blog
+      </button>
+    </nav>
+  </header>
+  <main class="content">
+    <section class="box-heading">
+      <p class="heading">Home</p>
+    </section>
+    <section class="blog-grid">
+      <div class="blog-side">
+      <div class="blog-side-top">
+        <div class="box-tab">
+          Music Player
+        </div>
+        <div id="picture-container" class="side-content">
+          <img src="/decorations/madotsuki_chairspin_desk.png" class="decoration">
+          <audio id="bgm-ponico" src="https://file.garden/aK6D_4rNmwUaQZg6/audio/yumenikkisave.mp3" type="audio/mpeg" controls loop></audio>
+          <marquee behavior="scroll" direction="left" scrollamount="3" loop>Now playing: Yume Nikki (Yume Nikki Soundtrack -Dream Sounds-) by Kikiyama</marquee>
+        </div>
+      </div>
+      <div class="blog-side-bottom">
+        <div class="box-tab">
+          Navigation
+        </div>
+        <div id="blog-nav" class="side-content">
+          <ul class="blog-list">
+            <li><button onclick="openEntry('blog-Welcome')" class="blog-link" style="margin-bottom: 18px;">Welcome. ݁₊ ⊹ . ݁ ⟡ ݁</button></li>
+            <li><button onclick="openEntry('9-7-25')" class="blog-link">Week 1 (9/7/25)</button></li>
+            <li><button onclick="openEntry('9-1-25')" class="blog-link">C++ (9/1/25)</button></li>
+            <li><button onclick="openEntry('8-27-25')" class="blog-link">999qrcodes (8/28/25)</button></li>
+          </ul>
+        </div>
+      </div>
+      </div>
+      <section class="blog-center">
+        <div class="box-tab">
+          Q's blog
+        </div>
+        <section class="blog-center-content">
+          <div id="blog-Welcome" class="blog-entry">
+            <div class="box-tab">
+              Welcome            
+            </div>
+            <div class="scroll-content">
+              <div class="blog-content">
+                <p>
+                  This is my blog, where I'll share my thoughts on random things. I figured opening a blog early would be beneficial because I can make updates to it while I work on the more complex sections (Archive, Interests) to be added soon. 
+                </p>
+                <img src="/decorations/ynflowers.gif" class="decoration-big">
+              </div>
+            </div>
+          </div>
+        <div id="8-27-25" class="blog-entry" style="display:none">
+          <div class="box-tab">
+            August 28, 2025 - 999qrcodes
+          </div>
+          <div class="scroll-content">
+            <div class="blog-content">
+              <p>
+                Hey! This is the first official blog post. Very exciting! For this first blog topic, I'd like to secure the beginning of "999qrcodes". However, this "999qrcodes" isn't referring to this site. Let me go into depth… 
+                <br><br>
+                In my health class recently, we were taught about goals. How to create them, set a plan, putting in the work to reach that goal, etc. While it was a very straightforward lesson, it made me realize that I've never truly set a goal for myself, let alone commit to one. I don't mean something like getting homework done by the end of the week, it's more in the sense of a personal project for self-fulfillment. So, I decided to come up with one. 
+                <br><br>
+                I want to study computer science, and I thought it'd be fun to work on a long-term programming project before college application season really kicks in. One of my favorite video games of all time is 9 Hours, 9 Persons, 9 Doors. Combining the two, we now have my new proposal: "9 Weeks, 9 Languages, 9 Projects". Cool, right? …Riiiight?
+                <br><br>
+                This project will span 9 weeks, and it will start on the first day of September, the 9th month of the year. The goal is to learn the basics of 9 programming languages and create 9 projects in 9 weeks. I'll dedicate each week to learning about one programming language, and create a small project by the end of the week using it. Thus, we have 999qrcodes. 9 [Weeks], 9 [Languages], 9 [Projects] [that] QR codes. (My initials are QR.)
+                <br><br>
+                I expect to reach my goal by October 19. I also intend to include documentation of the project in the Archive when it's finally ready. I'm excited, but hope I can really commit to this. My main reason for making this the first post is that if I don't solidify it somewhere, it'll decrease the chance I'll stay interested in it. Since this is posted for many to see, I expect to feel a bit pressure to keep up with the project.
+                <br><br>
+                That's all. Thank you for reading!
+              </p>
+              <img src="decorations/madotsuki-sitting.png" class="decoration-main">
+            </div>
+            </div>
+        </div>
+        <div id="9-1-25" class="blog-entry" style="display:none">
+          <div class="box-tab">
+            September 1, 2025 - C++
+          </div>
+          <div class="scroll-content">
+            <div class="blog-content">
+              <p>
+                Hello! Today is the official first day of the 999qrcodes project. Week 1 will feature the programming language… C++! 
+                <br><br>
+                I'm very excited about this. Please keep in mind that I will not be doing crazy, complex projects, as I have a lot going on outside of this project. Although, I wish I had more time to code. By the end of this week, I hope to update this again. Also, I am working on the "Interests" tab right now.
+                <br><br>
+                Thank you for reading!
+              </p>
+              <img src="decorations/madotsukichairbounce.gif" class="decoration-main">
+            </div>
+          </div>
+        </div>
+        <div id="9-7-25" class="blog-entry" style="display:none">
+          <div class="box-tab">
+            September 7, 2025 - Week 1
+          </div>
+          <div class="scroll-content">
+            <div class="blog-content">
+              <p>I meant Javascript, not C++!</p>
+              <br>
+              <p>I've decided to modify the 999qrcodes project to be more… realistic. It took me a while to get to where I am with HTML and CSS (and even then I'd barely consider myself an amateur), so why should I assume that I could learn the basics of a new coding language every week? I just don't want to make it too hard on myself. However, I still want to pursue some sort of project to improve my skills. </p>
+              <br>
+              <p>So, here is my new proposal: 9 Weeks, 9 Projects, 9 Features. Instead of studying different languages every week, I figured it would be better if I continued to study the ones I'm already somewhat familiar with (HTML, CSS) and develop more of that frontend knowledge with Javascript, which I know very little about. It's definitely less stressful that way, and in the end, this site benefits as well.</p>
+              <br>
+              <p>With that being said, it's the last day of the first week, and the first project is done! I created this <a href="/999qrcodes-project/week1.html" target="_blank">QR code generator</a>. It was a simple and straightforward project that I think is a great starting point. I feel like it's going to take a while for me to grow comfortable with Javascript's syntax, but that's the whole point of this! I was not only super busy but also very ill this entire week, so I'm grateful that I was able to get this out against all odds. See you next week!</p>
+              <img src="decorations/madotsukiwalkright.gif" class="decoration-main">
+            </div>
+            </div>
+        </div>
+          </section>
+      </div>
+      </section>
+      </section>
+    </section>
+  </main>
+</body>
+
+<script>
+function playDame() {
+  let audio = document.getElementById("sfx-dame");
+  audio.volume = 0.1; 
+  audio.currentTime = 0;
+  audio.play();
+}
+function playMuri() {
+  let audio = document.getElementById("sfx-muri");
+  audio.volume = 0.1;
+  audio.currentTime = 0;
+  audio.play();
+}
+
+function playPonico() {
+  const audio = document.getElementById("bgm-ponico");
+  audio.volume = 0.0;
+  audio.loop = true; 
+  audio.currentTime = 0;
+  audio.play();
+}
+
+function openEntry(blogEntry) {
+  var i;
+  var x = document.getElementsByClassName("blog-entry");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  document.getElementById(blogEntry).style.display = "block";
+}
+</script>
+
+</html>

@@ -1,0 +1,195 @@
+.interests-grid {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 600px;
+  background-color: var(--mid-color);
+  width: 100%;
+  height: auto;
+  margin-top: 18px;
+  color: var(--lt-color);
+  padding: 6px 18px;
+  border-radius: 3px;
+  column-gap: 18px;
+  padding: 18px;
+  box-sizing: border-box;
+  border: 2px solid var(--accent);
+  outline: 4px solid var(--lt-color);
+  box-sizing: border-box;
+}
+
+.interests-center {
+  grid-area: 1 / 2 / 3 / 3;
+  background-color: var(--dk-color);
+  border-radius: 3px;
+}
+
+.interests-entry {
+  grid-area: 1 / 1 / 3 / 3;
+}
+
+.interests-side {
+  grid-area: 1 / 1 / 3 / 2;
+  display: grid;
+  grid-template-rows: 300px 300px;
+  row-gap: 27px;
+}
+
+.interests-side-top {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.interests-side-bottom {
+  grid-area: 2 / 1 / 3 / 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.interests-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--lt-color);
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  color: var(--dkest-color);
+  font-size: 1rem;
+  font-family: 'sawarabi_gothicregular', 'Garamond';
+  padding: 18px;
+  border: 1px solid var(--accent);
+  border-top: none;
+  border-bottom-left-radius: 3px;  
+  border-bottom-right-radius: 3px;  
+  box-shadow: 2px 2px 2px inset var(--lt-color), -1px -1px 1px inset var(--dk-color);
+  text-align: left;
+}
+
+.interests-content p {
+  align-self: stretch;
+  text-align: center;
+}
+
+.interests-text {
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+
+.interests-text p {
+  text-align: left;
+}
+
+.interests-center-content {
+  border-radius: 6px;
+  text-align: left;
+  column-gap: 18px;
+  row-gap: 18px;
+  box-sizing: border-box;
+  max-height: 500px;
+  margin: 18px;
+}
+
+.interests-link {
+  width: 100%;
+  min-height: 36px;
+  background-color: var(--mid-color);
+  padding: 5px;
+  text-align: left;
+  text-shadow: .75px .5px .5px var(--lt-color);
+  font-family: 'sawarabi_gothicregular', 'Garamond';
+  font-size: .8rem;
+  color: var(--dkest-color);
+  border: none;
+  border-top: 1px solid var(--accent);  
+  transition: opacity 0.15s, box-shadow 0.15s;
+  cursor: pointer;
+  box-shadow: 2px 2px 2px inset var(--lt-color), -1px -1px 1px inset var(--dkest-color);
+}
+
+.interests-list li::before {
+  content: none;
+}
+
+.interests-list li {
+  padding: 0px;
+  margin: 0px;
+}
+
+.interests-list a {
+  background-color: transparent;
+}
+
+.interests-list ul {
+  margin: 0px;
+}
+
+#interests-nav {
+  padding: 0px;
+}
+
+@media (max-width: 1020px) {
+  .interests-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px 300px 600px;
+    width: 100%;
+    row-gap: 27px;
+  }
+  .interests-center {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+  .interests-side-bottom {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  .interests-side-top {
+    grid-area: 1 / 1 / 2 / 2;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.interests-1row-grid {
+  display: grid;
+  grid-template-rows: 150px;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  height: 100%;
+  place-items: center;
+  margin-bottom: 27px;
+}
+
+.category-link {
+  height: 80%;
+  width: 80%;
+  text-align: center;
+  text-shadow: .75px .5px .5px var(--lt-color);
+  font-family: 'sawarabi_gothicregular', 'Garamond';
+  font-size: .8rem;
+  color: var(--dkest-color);
+  border: 1px solid var(--accent); 
+  border-radius: 3px; 
+  transition: opacity 0.15s, box-shadow 0.15s;
+  cursor: pointer;
+  overflow: hidden;
+  background-color: var(--dkest-color);
+}
+
+.interests-box-tab {
+  font-family: "sawarabi_gothicregular", "Garamond";
+  font-size: .9em;
+  text-align: left;
+  padding: 6px 18px;
+  border-bottom: 1px solid var(--accent); 
+  text-align: center;
+  background-color: var(--mid-color);
+  padding: 5px;
+  text-shadow: .75px .5px .5px var(--lt-color);
+  font-family: 'sawarabi_gothicregular', 'Garamond';
+  font-size: .8rem;
+  color: var(--dkest-color);
+  border: none;
+  transition: opacity 0.15s, box-shadow 0.15s;
+  cursor: pointer;
+  box-shadow: 2px 2px 2px inset var(--lt-color), -1px -1px 1px inset var(--dkest-color);
+}
