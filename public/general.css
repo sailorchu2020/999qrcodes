@@ -47,7 +47,7 @@ body {
   padding-right: 20%;
   padding-bottom: 2%;
   background-color: var(--dk-color);
-  background-image: url("../backgrounds/index.png");
+  background-image: url("backgrounds/index.png");
   background-repeat: repeat;
   background-attachment: fixed;
   background-size: 36px;

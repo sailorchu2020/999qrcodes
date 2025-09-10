@@ -80,6 +80,11 @@
   margin: 18px;
 }
 
+.blog-text {
+  display: block;
+  margin-bottom: 9px;
+}
+
 .blog-link {
   width: 100%;
   min-height: 36px;

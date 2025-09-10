@@ -38,7 +38,14 @@ audio {
 .decoration-main {
   width: 20%;
   border-radius: 9px;
-  margin-bottom: 9px;
+  margin: 9px;
+}
+
+.decoration-main-small {
+  width: 9%;
+  border-radius: 9px;
+  margin: 12px;
+  margin-top: 0px;
 }
 
 .decoration-big {
@@ -58,7 +65,7 @@ audio {
     width: 50%;
   }
   .decoration {
-    width: 10%;
+    width: 40%;
     min-width: 100px
   }
 }
