@@ -134,6 +134,12 @@
   }
 }
 
+@media (min-width: 451px) {
+  .sm-view{
+    display: none;
+  }
+}
+
 @media (max-width: 450px) {
   .nav {
     display: grid;
