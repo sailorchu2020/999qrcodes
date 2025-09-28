@@ -22,13 +22,20 @@ weatherForm.addEventListener("submit", async event => {
 
 });
 
+const backendUrl = 'https://nine99qrcodes.onrender.com'; // Replace this with your Render URL
+
 async function getWeatherData(city) {
-  const apiUrl = `http://localhost:5500/api/weather?city=${encodeURIComponent(city)}`;
-  const response = await fetch(apiUrl);
-  if (!response.ok) {
-    throw new Error("Could not fetch weather data");
+  try {
+    const response = await fetch(`${backendUrl}/api/weather?city=${encodeURIComponent(city)}`);
+    if (!response.ok) {
+      throw new Error('Could not fetch weather data');
+    }
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error(error);
+    throw error;
   }
-  return await response.json();
 }
 
 

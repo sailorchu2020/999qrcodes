@@ -2,6 +2,7 @@
 import express from "express";
 import fetch from "node-fetch";
 import dotenv from "dotenv";
+import cors from "cors";
 
 dotenv.config();
 
@@ -9,13 +10,12 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 const API_KEY = process.env.WEATHER_API_KEY;
 
-app.use(express.json());
+// Enable CORS for your Neocities frontend domain
+app.use(cors({
+  origin: 'https://999qrcodes.neocities.org',
+}));
 
-// Allow your frontend to connect (CORS)
-app.use((req, res, next) => {
-  res.header("Access-Control-Allow-Origin", "*");
-  next();
-});
+app.use(express.json());
 
 // Weather route
 app.get("/api/weather", async (req, res) => {
@@ -42,5 +42,5 @@ app.get("/api/weather", async (req, res) => {
 
 // Start the server
 app.listen(PORT, () => {
-  console.log(`✅ Server running on http://localhost:${PORT}`);
+  console.log(`✅ Server running, listening on port ${PORT}`);
 });
