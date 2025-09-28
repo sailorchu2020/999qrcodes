@@ -274,3 +274,18 @@
 marquee {
   margin: 6px;
 }
+
+#statuscafe {
+    padding: .5em;
+    background-color: var(--lt-color);
+    border: 1px solid var(--accent);
+    font-family: 'sawarabi_gothicregular';
+}
+#statuscafe-username {
+    margin-bottom: .5em;
+    color: var(--dkest-color);
+}
+#statuscafe-content {
+    margin: 0 1em 0.5em 1em;
+    color: var(--dkest-color);
+}
