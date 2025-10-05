@@ -56,6 +56,7 @@
         <div id="blog-nav" class="side-content">
           <ul class="blog-list">
             <li><button onclick="openEntry('blog-Welcome')" class="blog-link" style="margin-bottom: 18px;">Welcome. ݁₊ ⊹ . ݁ ⟡ ݁</button></li>
+            <li><button onclick="openEntry('10-5-25')" class="blog-link">Week 5 (10/5/25)</button></li>
             <li><button onclick="openEntry('9-27-25')" class="blog-link">Week 4 (9/27/25)</button></li>
             <li><button onclick="openEntry('9-20-25')" class="blog-link">Week 3 (9/20/25)</button></li>
             <li><button onclick="openEntry('9-14-25')" class="blog-link">Week 2 (9/14/25)</button></li>
@@ -228,6 +229,23 @@
                 <img src="decorations/madotsukichairbounce.gif" class="decoration-main">
               </div>
             </div>
+          </div>
+          <div id="10-5-25" class="blog-entry" style="display:none">
+            <div class="box-tab">
+              October 5, 2025 - Week 5
+            </div>
+            <div class="scroll-content">
+              <div class="blog-content">
+                <div class="blog-text">
+                  <p>Done with week 5!</p>
+                  <p>I decided to make this week's project a bit simpler. Here is a <a href="999qrcodes-project/week5.html" target=“_blank”>drag-and-drop list</a>.</p>
+                  <p>It's crazy to think that the entire project is over halfway done already. I'm excited to see how it plays out in the end!</p>
+                  <p>Other than that, life has been pretty good. Not much to say. I have been getting interested in beatboxing lately.</p>
+                  <p>See you next week!</p>
+                </div>
+                <img src="decorations/yume-blackcat.png" class="decoration-main-small" style="width: 30px; border-radius: 0;">
+              </div>
+            </div>
           </div>  
         </section>
       </div>
@@ -238,26 +256,6 @@
 </body>
 
 <script>
-function playDame() {
-  let audio = document.getElementById("sfx-dame");
-  audio.volume = 0.1; 
-  audio.currentTime = 0;
-  audio.play();
-}
-function playMuri() {
-  let audio = document.getElementById("sfx-muri");
-  audio.volume = 0.1;
-  audio.currentTime = 0;
-  audio.play();
-}
-
-function playPonico() {
-  const audio = document.getElementById("bgm-ponico");
-  audio.volume = 0.0;
-  audio.loop = true; 
-  audio.currentTime = 0;
-  audio.play();
-}
 
 function openEntry(blogEntry) {
   var i;
