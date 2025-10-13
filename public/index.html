@@ -4,140 +4,132 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>999qrcodes</title>
+  <link rel="icon" type="image/x-icon" href="images/decorations/yume-blackcat.png">
+  <link href="index.css" rel="stylesheet" type="text/css" media="all">
   <link href="general.css" rel="stylesheet" type="text/css" media="all">
-  <link href="header.css" rel="stylesheet" type="text/css" media="all">
-  <link href="main.css" rel="stylesheet" type="text/css" media="all">
-  <link href="images.css" rel="stylesheet" type="text/css" media="all">
 </head>
 <body>
-  <header class="header">
-    <h1 class="title">
-      <span class="lg-view"><a href='index.html'>999qrcodes</a></span>
-      <span class="sm-view"><a href='index.html'>999</a></span>
-    </h1>
-    <nav class="nav">
-      <audio id="sfx-dame" src="https://file.garden/aK6D_4rNmwUaQZg6/audio/dame.mp3" type="audio/mpeg" preload="auto"></audio>
-      <audio id="sfx-muri" src="https://file.garden/aK6D_4rNmwUaQZg6/audio/muri.mp3" type="audio/mpeg" preload="auto"></audio>
-      <button onclick="document.location='about.html'" class="nav-button">
-        About
-      </button>
-      <button onclick="playDame()"class="nav-button">
-        Works
-      </button>
-      <button onclick="document.location='interests.html'" class="nav-button">
-        Interests
-      </button>
-      <button onclick="document.location='blog.html'" class="nav-button">
-        Blog
-      </button>
-    </nav>
-  </header>
-  <main class="content">
-    <section class="box-heading">
-      <p class="heading">Home</p>
-    </section>
-    <section class="main-grid">
-      <section class="left-top">
-        <div class="box-tab">
-          Notice
-        </div>
-        <div class="side-content">
-          <p>I'm optimizing this website for mobile screens! If any problems arise, please contact me through email (999qrcodes@gmail.com) or post a message on my <a href="https://neocities.org/site/999qrcodes" target="_blank">Neocities profile</a>.</p>
-        </div>
+  <link rel="icon" type="image/x-icon" href="/main/favicon.ico">
+
+  <div class="container">
+    <main class="index-grid">
+      <section class="header">
+        <h1>999qrcodes</h1>
       </section>
-      <section class="left-bottom">
-        <div class="box-tab">
-          Featured
-        </div>
-        <div id="featured" class="side-content">
-          <img class="content-pic" src="pictures/ionmax.png">
-          <a href="https://www.stormbowling.com/storm-ion-max-bowling-ball" target="_blank"><p>Storm Ion Max</p></a>
-        </div>
+      <section class="left">
+        <div class="nav-header">Navigation</div>
+        <button onclick="document.location='about.html'">About</button>
+        <button onclick="document.location='blog.html'">Blog</button>
+        <button class="unavailable">Media Log</button>
+        <button class="unavailable">Gallery</button>
+        <button class="unavailable">Bowling</button>
+        <button class="unavailable">Music</button>
+        <button class="unavailable">999qrcodes</button>
+        <button class="unavailable" style="border-bottom: none;">Credit</button>
+        <div class="nav-header">Off-Site</div>
+        <a href="https://neocities.org/site/999qrcodes" target="_blank"><button>Neocities</button></a>
+        <a href="https://myanimelist.net/profile/qrcodes" target="_blank"><button style="border-bottom: 1px solid var(--darkest);">MyAnimeList</button></a>
+        <img id="pink-plaid" src="images/material/pink-plaid.PNG">
+        <img id="madotsuki-manga" src="images/decorations/madotsuki-manga.png">
       </section>
-      <section class="right-top">
-        <div class="box-tab">
-          Music Player
-        </div>
-        <div id="music-player" class="side-content">
-          <div class="music-player">
-            <img class="music-pic" src="pictures/yumeost.png">
+      <section class="center">
+        <h1>Welcome to 999qrcodes!</h1>
+        <div class="center-grid">
+          <div class="center-top">
+            <p>
+              Welcome to my website. I'm 999qrcodes, or Q for short! I want to learn how to code, so I have this little site here in hopes of learning <strong>a <em>lot</em></strong>! This site is mostly responsive.
+            </p>
+            <img src="images/decorations/ynjelly.png" style="margin: 12px;">
           </div>
-          <audio id="bgm-ponico" src="https://file.garden/aK6D_4rNmwUaQZg6/audio/ponico.mp3" type="audio/mpeg" controls loop></audio>
-          <marquee behavior="scroll" direction="left" scrollamount="6" loop>Now playing: Ponico (Yume Nikki Soundtrack -Dream Sounds-) by Kikiyama</marquee>
-        </div>        
-      </section>
-      <section class="right-bottom">
-        <div class="box-tab">
-          Updates
-        </div>
-        <div id="updates" class="side-content">
-          <p><strong>August 28, 2025:</strong> <a href="blog.html">Blog</a> released!</p>
-          <p><strong>August 25, 2025:</strong> New Index + <a href="about.html">About</a> released!</p>
-        </div>
-      </section>
-      <div class="main-center">
-        <div class="box-tab">
-          Welcome
-        </div>
-        <div class="main-center-grid">
-          <div id="main-center-top" class="main-center-top">
-            <p>Welcome to my website. I'm 999qrcodes, or Q for short! I want to learn how to code, so I have this little site here in hopes of learning <strong>a <em>lot</em>!</strong></p>
-            <img class="right-pic" src="pictures/mrmewsit.png">
-          </div>
-          <div class="main-center-bottom-left">
-            <div class="box-tab">
-              Bio
+          <div class="center-left">
+            <div class="center-left-content">
+              <img class="album-cover" src="images/main/album-yume1.jpeg">
+              <audio src="https://file.garden/aK6D_4rNmwUaQZg6/audio/startofyumenikki.mp3" type="audio/mpeg" controls loop></audio>
             </div>
-            <div class="main-content">
-              The goal of this site is for me to learn HTML and CSS in a fun way that interests me! For more info about me and the site, click <a href="/about.html">here</a>.
+            <div class="box-header">
+              <div class="marquee">
+                Start of Yume Nikki (Yume Nikki OST)
+              </div>
             </div>
           </div>
-          <div class="main-center-bottom-right">
-            <div class="box-tab">
-              Status
+          <div class="center-right">
+            <div class="center-right-content scroll">
+            <h2>FANLISTINGS</h2>
+              <!-- <a href="http://fan.greenhype.net/bowling/" class="fanlisting-link zoom" target="_blank"><img src="fanlistings/bowling-fan.gif" alt="Bowling fanlisting"></a> -->
+              <a href="http://www.purifiedfiction.com/fdseries/" class="fanlisting-link zoom" target="_blank"> <img src="fanlistings/fdseries-100x50.gif" alt="Final Destination series fanlisting"></a>
+              <a href="https://in-blue-rain.org/lefthanded/" class="fanlisting-link zoom" target="_blank"><img src="fanlistings/lefty-100x50.png" alt="Lefty fanlisting"></a>
+              <a href="https://pkmn.redcrown.net/hoenn" class="fanlisting-link zoom" target="_blank"><img src="fanlistings/oras-100x50.png" alt="Pokemon - Ruby/Sapphire + remakes fanlisting"></a>
+              <a href="https://fanlistings.melankorin.net/vocaloid/" class="fanlisting-link zoom" target="_blank"><img src="fanlistings/vocaloid-100x50.png" alt="Vocaloid fanlisting"></a>
+              <img src="fanlistings/yume-nikki-100x50.png" class="zoom">
+              <a href="https://fan.redcrown.net/escape" class="fanlisting-link zoom" target="_blank"><img src="fanlistings/zero-escape-100x50.png" alt="Zero Escape fanlisting"></a>
+              <!-- <hr>
+              <h2>WEBRINGS</h2> -->
             </div>
-              <div id="statuscafe"><div id="statuscafe-username"></div><div id="statuscafe-content"></div></div><script src="https://status.cafe/current-status.js?name=999qrcodes" defer></script>
           </div>
         </div>
-      </div>
-    </div>
-    </section>
-    <section class="footer">
-      <marquee behavior="scroll" direction="left" scrollamount="6" loop>
-        <img class="decorative-button" src="buttons/yumenikki.gif">
-        <img class="decorative-button" src="buttons/teto.gif">
-        <img class="decorative-button" src="buttons/madoshirt.png">  
-        <img class="decorative-button" src="buttons/tetoterritory.gif">
-        <img class="decorative-button" src="buttons/madostairs.gif">
-        <img class="decorative-button" src="buttons/godish.gif">
-        <img class="decorative-button" src="buttons/neocities2.png">
-        <img class="decorative-button" src="buttons/vscode.png">
-      </marquee>
-    </section>
-  </main>
+      </section>
+      <section class="right">
+        <div class="updates">
+          <h2 style="margin: 0; font-size: 1.2rem;">Updates</h2>
+          <p>10/12/25: New Layout Released</p>
+          <p>8/28/25: (Old) Blog Released</p>
+          <p>8/25/25: (Old) Index + About Released</p>
+        </div>
+        <div id="statuscafe"><div id="statuscafe-username"></div><div id="statuscafe-content"></div></div><script src="https://status.cafe/current-status.js?name=999qrcodes" defer></script>
+        <div id="buttons">
+          <div class="marquee2">
+            <img class="decorative-button" src="buttons/yumenikki.gif">
+            <img class="decorative-button" src="buttons/teto.gif">
+            <img class="decorative-button" src="buttons/madoshirt.png">  
+            <img class="decorative-button" src="buttons/tetoterritory.gif">
+            <img class="decorative-button" src="buttons/madostairs.gif">
+            <img class="decorative-button" src="buttons/godish.gif">
+            <img class="decorative-button" src="buttons/yn-bus.gif">
+            <img class="decorative-button" src="buttons/3ds-button.png">
+            <img class="decorative-button" src="buttons/yn-flowers.gif">
+            <img class="decorative-button" src="buttons/heart-frisk.png">
+            <img class="decorative-button" src="buttons/yn-uboa.gif">
+            <img class="decorative-button" src="buttons/mikurinlen.gif">
+            <img class="decorative-button" src="buttons/yn-kyuukyuu.gif">
+            <img class="decorative-button" src="buttons/rollinggirl.gif">
+            <img class="decorative-button" src="buttons/yn-darkforest.gif">
+            <img class="decorative-button" src="buttons/pokemon.gif">
+            <img class="decorative-button" src="buttons/yn-gaming.gif">
+            <img class="decorative-button" src="buttons/neocities2.png">
+            <img class="decorative-button" src="buttons/vscode.png">
+          </div>
+          <div class="marquee2">
+            <img class="decorative-button" src="buttons/yumenikki.gif">
+            <img class="decorative-button" src="buttons/teto.gif">
+            <img class="decorative-button" src="buttons/madoshirt.png">  
+            <img class="decorative-button" src="buttons/tetoterritory.gif">
+            <img class="decorative-button" src="buttons/madostairs.gif">
+            <img class="decorative-button" src="buttons/godish.gif">
+            <img class="decorative-button" src="buttons/yn-bus.gif">
+            <img class="decorative-button" src="buttons/3ds-button.png">
+            <img class="decorative-button" src="buttons/yn-flowers.gif">
+            <img class="decorative-button" src="buttons/heart-frisk.png">
+            <img class="decorative-button" src="buttons/yn-uboa.gif">
+            <img class="decorative-button" src="buttons/mikurinlen.gif">
+            <img class="decorative-button" src="buttons/yn-kyuukyuu.gif">
+            <img class="decorative-button" src="buttons/rollinggirl.gif">
+            <img class="decorative-button" src="buttons/yn-darkforest.gif">
+            <img class="decorative-button" src="buttons/pokemon.gif">
+            <img class="decorative-button" src="buttons/yn-gaming.gif">
+            <img class="decorative-button" src="buttons/neocities2.png">
+            <img class="decorative-button" src="buttons/vscode.png">
+          </div>
+        </div>
+        <div class="my-button">
+          <img src="buttons/999qrcodes-button.png" class="decorative-button zoom" style="margin-bottom: 3px;">
+        </div>
+        <img id="paper" src="images/material/linepaper.png">
+        <img id="madotsuki-chair" src="images/decorations/madotsuki_chairspin_desk.gif">
+      </section>
+      <section class="footer">
+        <p>999qrcodes  ♡  2023 -  2025</p>
+      </section>
+    </main>
+  </div>
 </body>
-
-<script>
-function playDame() {
-  let audio = document.getElementById("sfx-dame");
-  audio.volume = 0.1; 
-  audio.currentTime = 0;
-  audio.play();
-}
-function playMuri() {
-  let audio = document.getElementById("sfx-muri");
-  audio.volume = 0.1;
-  audio.currentTime = 0;
-  audio.play();
-}
-
-function playPonico() {
-  const audio = document.getElementById("bgm-ponico");
-  audio.volume = 0.0;
-  audio.loop = true; 
-  audio.currentTime = 0;
-  audio.play();
-}
-</script>
-
 </html>
