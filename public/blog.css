@@ -168,6 +168,7 @@ li button:hover {
   right: -70px;
   transition: opacity .15s;
   display: none;
+  z-index: 999;
 }
 
 #akane2:hover {
