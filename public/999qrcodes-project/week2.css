@@ -36,8 +36,8 @@
 
 body {
   margin: 0;
-  background-color: var(--dk-color);
-  background-image: url("../backgrounds/index.png");
+  background-color: var(--lt-color);
+  background-image: url(../images/main/index-background.png);
   background-repeat: repeat;
   background-attachment: fixed;
   background-size: 36px;
