@@ -1,0 +1,92 @@
+@font-face {
+  font-family: dot-gothic12;
+  src: url('../fonts/Canva_DotGothic12Std-M.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: arcade-gamer;
+  src: url('../fonts/ArcadeGamer-Regular.woff2') format('woff2');
+}
+
+:root {
+  --lightest: #ffecf6;
+  --light: #f2ccdd;
+  --mid: #a54050;
+  --dark: #64495c;
+  --darker: #33243B;
+  --darkest: #3c0308;
+  --black: #240c1a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--lightest);
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(../images/main/index-background.png);
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#game {
+  width: 640px;
+  height: 321px;
+  border: 2px dashed var(--mid);
+  background-image: url(999-images/mall-rooftop.png);
+  overflow: hidden;
+  position: relative;
+}
+
+#block {
+  width: 50px;
+  height: 321px;
+  background: #300707;
+  background: linear-gradient(0deg, rgba(48, 7, 7, 1) 2%, rgba(99, 18, 18, 1) 50%, rgba(204, 0, 0, 1) 100%);
+  box-shadow: inset 1px -1px 2px white;
+  border: 1px solid var(--darkest);
+  position: relative;
+  left: 640px;
+  animation: block 3s infinite linear;
+  mask-image: var(--mask, none);
+  -webkit-mask-image: var(--mask, none);
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+}
+
+#hole {
+  width: 50px;
+  height: 120px;
+  position: relative;
+  /* background-color: blue; */
+  left: 640px;
+  top: -321px;
+  animation: block 3s infinite linear;
+}
+
+@keyframes block {
+  0%{left:640px}
+  100%{left:-50px}
+}
+
+#character {
+  height: 70px;
+  width: 70px;
+  background-image: url(999-images/madotsuki-witch.gif);
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 50px;
+}
