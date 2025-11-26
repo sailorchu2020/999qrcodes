@@ -1,9 +1,10 @@
 :root {
-  --lightest: #efeffc;
-  --light: #d0cef0;
-  --mid: #6445a0;
-  --dark: #4d5160;
-  --darkest: #42305f;
+  --lightest: #ffecf6;
+  --light: #f2c3d8;
+  --mid: #df82a6;
+  --dark: #c57fa2;
+  --darker: #33243B;
+  --darkest: #3c0308;
   --black: #240c1a;
 }
 
@@ -16,7 +17,7 @@ a {
 }
 
 body {
-  background-color: #EEEFFD !important;
+  background-color: var(--lightest) !important;
   background: url(images/main/blog-background.PNG);
   background-repeat: repeat;
   background-attachment: fixed;
@@ -25,18 +26,19 @@ body {
 }
 
 .container {
-  display: flex;
   height: 100%;
+  display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
+  margin: 25px;
 }
 
 .grid {
   background-color: var(--light);
-  border: 1px solid var(--darkest);
+  border: 1px ridge var(--darkest);
   max-width: 900px;
   max-height: 700px;
-  margin: auto auto;
   padding: 27px;
   display: grid;
   grid-template-areas: 
@@ -49,12 +51,15 @@ body {
   column-gap: 12px;
   height: 100%;
   position: relative;
+  box-shadow: inset 2px 3px 1px var(--lightest), inset -2px -3px 1px var(--dark);
 }
 
 .header {
   grid-area: header;
-  background-color: var(--dark);
-  color: var(--light);
+  background: #C57FA2;
+  background: linear-gradient(90deg, rgba(197, 127, 162, 1) 0%, rgba(255, 236, 246, 1) 100%);
+  box-shadow: inset 2px 2px 1px var(--lightest), inset -2px -2px 1px var(--dark);
+  color: var(--lightest);
   padding: 0px 0 0px 27px;
   border: 1px solid var(--darkest);
   border-radius: 18px 18px 0 0;
@@ -74,7 +79,7 @@ body {
 .blog {
   grid-area: blog;
   background-color: var(--lightest);
-  border: 2px dashed var(--mid);
+  border: 1px solid var(--darkest);
   /* border-radius: 0px 0px 18px 0px; */
   padding: 18px;
 }
@@ -140,17 +145,45 @@ li button:hover {
   margin-top: 18px;
 }
 
-#akane {
-  position: fixed;
-  height: 900px;
-  right: 1px;
-  bottom: -200px;
+/* #iris {
+  position: absolute;
+  height: 700px;
+  right: -230px;
+  bottom: -60px;
   display: block;
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(1px 1px .5px var(--dark));
+  animation: float 7s ease-in-out infinite;
+} */
+
+#iris {
+  height: 800px;
+  position: relative;
+  bottom: -70px;
+  margin-left: 2%;
+  display: block;
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(1px 1px .5px var(--dark));
+  animation: float 7s ease-in-out infinite;
 }
+
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(15px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
 
 .footer {
   grid-area: footer;
-  background-color: var(--dark);
+  background-color: var(--lightest);
   border: 1px solid var(--darkest);
   border-radius: 0px 0px 18px 18px;
   padding: 9px 36px;
@@ -158,24 +191,26 @@ li button:hover {
   flex-direction: row;
   align-items: center;
   white-space: nowrap;
-  color: var(--lightest);
+  color: var(--darker);
 }
 
-#akane2 {
+#iris2 {
   position: absolute;
   height: 650px;
   bottom: -50px;
-  right: -70px;
+  right: -120px;
   transition: opacity .15s;
   display: none;
   z-index: 999;
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(1px 1px .5px var(--dark));
 }
 
-#akane2:hover {
-  opacity: .25;
+#iris2:hover {
+  /* opacity: .25; */
 }
 
-#akane3 {
+#iris2 {
   display: none;
   object-fit: cover;
 }
@@ -187,29 +222,35 @@ audio {
 
 #music1 {
   display: block;
+  color: var(--darker);
+  font-size: .9rem;
 }
 
 #music2 {
   display: none;
+  color: var(--darker);
+  font-size: .9rem;
 }
 
 a {
   color: var(--dark);
 }
 
-@media (max-width: 1300px) {
-  #akane {
-    display: none;
-  }
-  #akane2 {
-    display: block;
-    pointer-events: all !important;
-  }
+#welcome-gif {
+  width: 70%;
+  border-radius: 9px;
+  margin: 27px;
+  border: 5px double var(--mid);
+  filter: saturate(0.8);
 }
 
 @media (max-width: 768px) {
-  #akane2 {
-    display: none;
+  .container {
+    margin: 0px;
+    margin-top: 25px;
+  }
+  #iris {
+    height: 600px;
   }
   body {
     margin: 0;
@@ -248,14 +289,17 @@ a {
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 550px) {
   #music1 {
     display: none;
   }
   #music2 {
     display: block;
   }
-  #akane3 {
+  #iris {
+    display: none;
+  }
+  #iris2 {
     display: flex;
     position: absolute;
     top: -10px;
