@@ -2,6 +2,7 @@
   --lightest: #ffecf6;
   --light: #f2ccdd;
   --mid: #a54050;
+  --mid2: #c57fa2;
   --dark: #64495c;
   --darker: #33243B;
   --darkest: #3c0308;
@@ -33,7 +34,11 @@ body {
   padding: 27px;
   padding-bottom: 0;
   row-gap: 12px;
-  border: 1px solid var(--darkest);
+  border: 1px ridge var(--light);
+  border-image-source: url(images/material/border2.png);
+  border-image-slice: 6;
+  border-image-repeat: round;
+  border-image-width: 7px;
   max-height: max-content;
 }
 
@@ -47,6 +52,7 @@ body {
   border-radius: 18px 18px 0 0;
   color: var(--light);
   text-shadow: 0px 0px 4px var(--lightest);
+  box-shadow: inset .5px .5px 0px var(--light), inset -1px -1px 0px var(--darker), 1px 1px 1px var(--dark);
   font-size: 220%;
   border: 1px solid var(--darkest);
 }
@@ -57,9 +63,13 @@ body {
 
 .center {
   grid-area: center;
-  background-color: var(--light);
+  background-image: url(images/material/pinkstar.png);
+  background-repeat: repeat;
+  background-size: 10px;
+  box-shadow: inset 1px 1px 1px var(--mid2), inset -1px -1px 1px var(--mid2);
+  image-rendering: pixelated;
   /* border-radius: 18px 18px 0 0; */
-  border: 1px solid var(--darkest);
+  border: 1px solid var(--dark);
   padding: 18px;
   display: flex;
   flex-direction: column;
@@ -74,6 +84,7 @@ body {
 
 .center h1 {
   color: var(--dark);
+  text-shadow: 1px 1px 0px var(--lightest);
   text-align: center;
   margin: 0 0 9px 0;
 }
@@ -102,11 +113,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 1px 1px 1px var(--mid2);
 }
 
 .center-left {
   display: flex;
   flex-direction: column;
+  box-shadow: 1px 1px 1px var(--mid2);
 }
 
 .center-left-content {
@@ -116,18 +129,21 @@ body {
   justify-content: center;
   grid-area: center-left;
   background-color: var(--dark);
-  border: 1px solid var(--darkest);
+  border: 1px solid var(--dark);
   border-bottom: none;
   /* border-radius: 20px 0px 0 0; */
   padding: 18px;
   height: 100%;
   width: 100%;
+  box-shadow: inset 1px 1px 2px var(--darker), inset -1px -1px 2px var(--darker);
 }
 
 
 .box-header {
   position: relative;
   background-color: var(--lightest);
+  background: linear-gradient(0deg, var(--mid2), var(--light) 15%, var(--lightest) 100%);
+  text-shadow: 1px 1px 2px var(--lightest);
   border: 1px solid var(--dark);
   padding: 2px 0px;
   font-size: 0.75em;
@@ -188,8 +204,8 @@ body {
 .center-right {
   grid-area: center-right;
   background-color: var(--lightest);
-  border: 1px solid var(--darkest);
-
+  border: 2px ridge var(--lightest);
+  box-shadow: 1px 1px 1px var(--mid2);
   /* border-radius: 0px 20px 0 0; */
   text-align: center;
   color: var(--dark);
@@ -203,15 +219,14 @@ body {
 
 .center-right h2 {
   font-size: 1rem;
+  text-shadow: 1px 1px 0px var(--light);
 }
 
 .fanlisting-link {
   display: inline-block;
   width: 100px;
   height: 50px;
-  overflow: auto;
-  overflow-clip-margin: content-box;
-  overflow: clip;
+  overflow: visible;
 }
 
 .left {
@@ -220,14 +235,18 @@ body {
 }
 
 .nav-header {
-  font-family: 'dot-gothic12', Georgia;
-  color: var(--lightest);
+  font-family: 'arcade-gamer', Georgia;
+  text-transform: uppercase;
+  color: var(--dark);
+  text-shadow: 1px 1px 2px var(--lightest);
   background-color: var(--dark);
+  background: linear-gradient(0deg, var(--mid2), var(--light) 50%, var(--lightest) 100%);
   font-size: .9rem;
   padding: 3px 0px;
-  border: 1px solid var(--darkest);
+  border: 1px solid var(--dark);
   border-right: none;
   text-align: center;
+
 }
 
 button {
@@ -236,8 +255,10 @@ button {
   text-align: left;
   padding-left: 9px;
   background-color: var(--lightest);
+  background: linear-gradient(0deg, var(--lightest) 0%, var(--light) 100%);
+  box-shadow: inset 2px 2px 1px var(--lightest), inset -2px -2px 1px var(--light);
   border-top: none;
-  border-left: 1px solid var(--darkest);
+  border-left: 1px solid var(--dark);
   border-right: none;
   border-bottom: 1px solid var(--dark);
   width: 100%;
@@ -251,6 +272,7 @@ button:hover {
   padding-left: 20px;
   color: var(--mid);
   text-decoration: underline;
+  box-shadow: inset 2px 2px 1px var(--light), inset -2px -2px 1px var(--lightest);
 }
 
 #pink-plaid {
@@ -267,6 +289,8 @@ button:hover {
   top: 375px;
   right: 0px;
   z-index: 2;
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(1px 1px .5px var(--mid2));
 }
 
 .right {
@@ -282,6 +306,7 @@ button:hover {
   border: 1px solid var(--darkest);
   border-left: none;
   background-color: var(--dark);
+  box-shadow: inset 1px 1px 1px var(--light), inset -1px -1px 1px var(--darker);
   color: var(--light);
   height: 250px;
   padding: 3px 6px;
@@ -294,19 +319,28 @@ button:hover {
   font-size: .9rem;
   text-align: left;
   border-bottom: 1px solid var(--darker);
+  background: linear-gradient(var(--dark) 50%, var(--darker) 100%);
+  border-radius: 0px 0px 9px 9px;
+}
+
+.updates h2 {
+  text-shadow: 2px 2px 1px var(--darker);
 }
 
 #statuscafe {
   margin-top: 9px;  
   padding: .3em;
   background-color: var(--lightest);
-  border: 1px solid var(--darkest);
+  border: 1px solid var(--dark);
   border-left: none;
   font-family: 'dot-gothic12', Georgia;
   font-size: .72rem;
   color: var(--dark);
   position: relative;
   z-index: 2;
+  text-shadow: 1px 1px 2px var(--lightest);
+  background: linear-gradient(0deg, var(--mid2), var(--light) 5%, var(--lightest) 90%);
+  box-shadow: inset .5px .5px 0px var(--light), inset -1px -1px 1px var(--mid2);
 }
 #statuscafe-username {
     margin-bottom: .5em;
@@ -340,6 +374,7 @@ button:hover {
   box-shadow: 1px 1px 1px var(--black);
   height: 31px;
   width: 88px;
+  image-rendering: pixelated;
 }
 
 #paper {

@@ -57,6 +57,7 @@ hr {
 
 * {
   box-sizing: border-box;
+  image-rendering: pixelated;
 }
 
 img {

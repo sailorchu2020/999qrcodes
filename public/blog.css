@@ -57,7 +57,7 @@ body {
 .header {
   grid-area: header;
   background: #C57FA2;
-  background: linear-gradient(90deg, rgba(197, 127, 162, 1) 0%, rgba(255, 236, 246, 1) 100%);
+  background: linear-gradient(90deg, #c57fa2 0%, rgba(255, 236, 246, 1) 100%);
   box-shadow: inset 2px 2px 1px var(--lightest), inset -2px -2px 1px var(--dark);
   color: var(--lightest);
   padding: 0px 0 0px 27px;
@@ -118,6 +118,7 @@ li button {
   border: none;
   border-bottom: 1px solid var(--darkest);
   transition: color .15s;
+  color: var(--darkest);
 }
 
 li button:hover {
