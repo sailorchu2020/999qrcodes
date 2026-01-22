@@ -1,0 +1,123 @@
+@font-face {
+  font-family: dot-gothic12;
+  src: url('../fonts/Canva_DotGothic12Std-M.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: arcade-gamer;
+  src: url('../fonts/ArcadeGamer-Regular.woff2') format('woff2');
+}
+
+:root {
+  --lightest: #ffecf6;
+  --light: #f2ccdd;
+  --mid: #a54050;
+  --dark: #64495c;
+  --darker: #33243B;
+  --darkest: #3c0308;
+  --black: #240c1a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+hr {
+  border: .5px solid var(--dark);
+}
+
+h1 {
+  font-family: arcade-gamer, Georgia;
+  color: var(--dark);
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: dot-gothic12, Georgia;
+  color: var(--darker);
+  font-weight: normal;
+}
+
+body {
+  background-color: var(--lightest);
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(../images/main/index-background.png);
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.app {
+  width: 90%;
+  max-width: 600px;
+  background-color: var(--lightest);
+  padding: 27px;
+  row-gap: 12px;
+  border: 1px ridge var(--light);
+  border-image-source: url(../images/material/border2.png);
+  border-image-slice: 6;
+  border-image-repeat: round;
+  border-image-width: 7px;
+  max-height: max-content;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  font-family: 'dot-gothic12', Georgia;
+  color: var(--dark);
+  text-align: left;
+  padding-left: 9px;
+  background-color: var(--lightest);
+  background: linear-gradient(0deg, var(--lightest) 0%, var(--light) 100%);
+  box-shadow: inset 2px 2px 1px var(--lightest), inset -2px -2px 1px var(--light);
+  border: 1px solid var(--dark);
+  cursor: pointer;
+  position: relative;
+  transition: padding-left .15s, color .15s;
+  filter: hue-rotate(0deg);
+}
+
+.btn:hover:not([disabled]) {
+  padding-left: 20px;
+  color: var(--mid);
+  text-decoration: underline;
+  box-shadow: inset 2px 2px 1px var(--light), inset -2px -2px 1px var(--lightest);
+}
+
+.btn:disabled{
+  cursor: no-drop;
+}
+
+#next-btn {
+  display: block;
+  width: 150px;
+  padding: 10px;
+  margin: 5px auto;
+  font-family: 'dot-gothic12', Georgia;
+  color: var(--light);
+  text-align: center;
+  background: linear-gradient(0deg, var(--darker) 0%, var(--dark) 100%);
+  box-shadow: inset 2px 2px 1px var(--dark), inset -2px -2px 1px var(--darker);
+  border: 1px solid var(--darkest);
+  cursor: pointer;
+}
+
+.correct {
+  filter: hue-rotate(170deg);
+}
+
+.incorrect {
+  filter: saturate(200%) hue-rotate(10deg) brightness(95%);
+}
