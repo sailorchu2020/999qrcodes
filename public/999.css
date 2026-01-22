@@ -17,7 +17,7 @@ a {
 
 body {
   background-color: #EEEFFD !important;
-  background: url(images/main/999-background.PNG);
+  background: url(/images/main/999-background.PNG);
   background-repeat: repeat;
   background-attachment: fixed;
   background-size: 27px;
