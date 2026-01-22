@@ -218,8 +218,18 @@ a {
 }
 
 @media (max-width: 768px) {
-  #akane2 {
+  #akane {
     display: none;
+  }
+  #akane3 {
+    display: flex;
+    position: absolute;
+    top: -10px;
+    right: 0;
+    z-index: 0;
+    height: 350px;
+    -webkit-filter: drop-shadow(1px 1px .5px var(--dark));
+    filter: drop-shadow(1px 1px 1px var(--dark));
   }
   body {
     margin: 0;
@@ -272,5 +282,8 @@ a {
     right: 0;
     z-index: 0;
     height: 350px;
+  }
+  .header {
+    font-size: 220%;
   }
 }
