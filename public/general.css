@@ -1,3 +1,14 @@
+:root {
+  --lightest: #ffecf6;
+  --light: #f2ccdd;
+  --mid: #a54050;
+  --mid2: #c57fa2;
+  --dark: #64495c;
+  --darker: #33243B;
+  --darkest: #3c0308;
+  --black: #240c1a;
+}
+
 @font-face {
   font-family: dot-gothic16;
   src: url('fonts/dotgothic16-regular-webfont.woff') format('woff');
@@ -18,6 +29,11 @@
   src: url('fonts/ArcadeGamer-Regular.woff2') format('woff2');
 }
 
+@font-face {
+  font-family: fleur;
+  src: url('fonts/fleurdeleah-regular-webfont.woff') format('woff');
+}
+
 p, h1 {
   font-family: 'dot-gothic12', Georgia;
   line-height: 1.4;
@@ -35,10 +51,6 @@ h1 {
 h2 {
   font-weight: normal;
   font-family: 'arcade-gamer', Georgia;
-}
-
-body {
-  background-color: var(--lightest);
 }
 
 .scroll {
@@ -102,6 +114,18 @@ ul {
 li::before {
   content: "♡";
   margin-right: 6px;
+}
+
+.disclaimer {
+  font-family: dot-gothic12, Georgia;
+  color: var(--mid);
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: .8em;
+  text-decoration: wavy;
+  background-color: transparent;
+  border: none;
 }
 
 .home-link {
