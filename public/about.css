@@ -222,4 +222,7 @@ body {
   .top-text {
     max-width: 90%;
   }
+  .home-link {
+    display: none;
+  }
 }
