@@ -96,7 +96,7 @@ body {
     'center-top center-top'
     'center-left center-right';
   grid-template-columns: 1fr 0.75fr;
-  grid-template-rows: minmax(0, .5fr) minmax(0, .75fr);
+  grid-template-rows: minmax(0, .5fr) minmax(0, .65fr);
   box-sizing: border-box;
   row-gap: 12px;
   column-gap: 12px;
@@ -118,9 +118,14 @@ body {
 }
 
 .center-left {
+  grid-area: center-left;
   display: flex;
   flex-direction: column;
   box-shadow: 1px 1px 1px var(--mid2);
+  background-color: var(--dark);
+  border: 1px solid var(--dark);
+  border-bottom: none;
+  box-shadow: inset 1px 1px 2px var(--darker), inset -1px -1px 2px var(--darker);
 }
 
 .center-left-content {
@@ -128,20 +133,15 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  grid-area: center-left;
-  background-color: var(--dark);
-  border: 1px solid var(--dark);
-  border-bottom: none;
-  /* border-radius: 20px 0px 0 0; */
-  padding: 18px;
-  height: 100%;
   width: 100%;
-  box-shadow: inset 1px 1px 2px var(--darker), inset -1px -1px 2px var(--darker);
+  height: 100%;
 }
 
 
 .box-header {
+  width: 100%;
   position: relative;
+  bottom: 0;
   background-color: var(--lightest);
   background: linear-gradient(0deg, var(--mid2), var(--light) 15%, var(--lightest) 100%);
   text-shadow: 1px 1px 2px var(--lightest);

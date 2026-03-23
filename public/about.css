@@ -78,7 +78,7 @@ body {
   top: 50px;
   margin-left: auto;
   margin-top: auto;
-  color: var(--darker);
+  color: var(--mid2);
   -webkit-filter: drop-shadow(5px 5px 5px #222);
   filter: drop-shadow(2px 0px 1px var(--dark));
   pointer-events: none;
@@ -152,7 +152,7 @@ body {
 .heading {
   font-family: arcade-gamer, Georgia;
   font-size: 2rem;
-  color: var(--darker);
+  color: var(--mid2);
 }
 
 .home-link2 {
