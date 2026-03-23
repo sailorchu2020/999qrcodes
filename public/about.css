@@ -38,6 +38,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  overflow-x: hidden;
 }
 
 .home-link {
@@ -153,20 +154,23 @@ body {
   font-family: arcade-gamer, Georgia;
   font-size: 2rem;
   color: var(--mid2);
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(1px 0px 1px var(--dark));
 }
 
 .home-link2 {
   font-family: dot-gothic12, Georgia;
   position: absolute;
-  top: 40px;
-  left: 40px;
+  top: 30px;
+  left: 30px;
   font-size: 1em;
-  color: var(--dark);
+  color: var(--darker);
   text-decoration: underline;
   cursor: pointer;
   transition: color .15s;
   background-color: transparent;
   border: none;
+  z-index: 50;
 }
 
 @media (min-width: 601px) {
