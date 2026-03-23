@@ -55,10 +55,11 @@ body {
   box-shadow: inset .5px .5px 0px var(--light), inset -1px -1px 0px var(--darker), 1px 1px 1px var(--dark);
   font-size: 300%;
   border: 1px solid var(--darkest);
+  position: relative;
 }
 
 .header h1 {
-  margin: 40px auto 20px 108px;
+  margin: 70px auto 20px 108px;
   font-family: 'fleur';
 }
 
@@ -95,8 +96,8 @@ body {
   grid-template-areas:
     'center-top center-top'
     'center-left center-right';
-  grid-template-columns: 1fr 0.75fr;
-  grid-template-rows: minmax(0, .5fr) minmax(0, .65fr);
+  grid-template-columns: 1fr 0.8fr;
+  grid-template-rows: minmax(.5fr, .5fr) minmax(0fr, .6fr);
   box-sizing: border-box;
   row-gap: 12px;
   column-gap: 12px;
@@ -217,25 +218,14 @@ body {
 
 .center-right-content {
   /* padding: 0px 6px; */
+  min-height: 250px;
+  max-height: 235px;
+  display: inline;
 }
 
 .center-right h2 {
   font-size: 1rem;
   text-shadow: 1px 1px 0px var(--light);
-}
-
-.fanlisting-link {
-  display: inline-block;
-  width: 100px;
-  height: 50px;
-  overflow: visible;
-}
-
-.fanlisting-link-50 {
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  overflow: visible;
 }
 
 .left {
@@ -379,8 +369,6 @@ button:hover {
 }
 
 .decorative-button {
-  margin: 0px 3px;
-  box-shadow: 1px 1px 1px var(--black);
   height: 31px;
   width: 88px;
   image-rendering: pixelated;
@@ -451,6 +439,10 @@ audio {
 
 .purple-filter:hover {
   filter: sepia(0) hue-rotate(0deg);
+}
+
+.site-button {
+
 }
 
 @media (max-width: 920px) {
@@ -534,7 +526,8 @@ audio {
     margin-bottom: 15px;
   }
   .header h1 {
-      margin: 50px 80px 20px 20px;
+      margin: 80px 80px 20px 20px;
+      font-size: 3rem;
   }
   .marquee {
     animation: none;
