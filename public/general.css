@@ -1,14 +1,3 @@
-:root {
-  --lightest: #ffecf6;
-  --light: #f2ccdd;
-  --mid: #a54050;
-  --mid2: #c57fa2;
-  --dark: #64495c;
-  --darker: #33243B;
-  --darkest: #3c0308;
-  --black: #240c1a;
-}
-
 @font-face {
   font-family: dot-gothic16;
   src: url('fonts/dotgothic16-regular-webfont.woff') format('woff');
