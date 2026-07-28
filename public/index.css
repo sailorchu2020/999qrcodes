@@ -21,7 +21,7 @@ body {
 .container {
   max-width: 900px;
   margin: 20px auto;
-  }
+}
 
 .index-grid {
   display: grid;
@@ -233,7 +233,18 @@ body {
   position: relative;
 }
 
-.nav-header {
+.calendar {
+  margin-top: 20px;
+  position: relative;
+  z-index: 2;
+  font-family: dot-gothic12;
+  color: var(--dark);
+  font-size: .7rem;
+}
+
+
+.nav-header, .calendar center {
+  position: relative;
   font-family: 'arcade-gamer', Georgia;
   text-transform: uppercase;
   color: var(--dark);
@@ -245,7 +256,18 @@ body {
   border: 1px solid var(--dark);
   border-right: none;
   text-align: center;
+  z-index: 2;
+}
 
+.calendar center {
+  font-family: 'dot-gothic12', Georgia;
+  text-shadow: 1px 1px 0px var(--light);
+  text-transform: capitalize;
+  font-size: .9rem;
+}
+
+.calendar td {
+  width: 50px;
 }
 
 button {
@@ -275,10 +297,10 @@ button:hover {
 }
 
 #pink-plaid {
+  position: absolute;
   width: 280px;
-  height: 300px;
-  position: relative;
-  right: 20px;
+  height: 290px;
+  right: -110px;
   bottom: 40px;
   z-index: 1;
 }
@@ -307,7 +329,7 @@ button:hover {
   background-color: var(--dark);
   box-shadow: inset 1px 1px 1px var(--light), inset -1px -1px 1px var(--darker);
   color: var(--light);
-  height: 250px;
+  height: 200px;
   padding: 3px 6px;
   position: relative;
   z-index: 2;
@@ -385,7 +407,7 @@ button:hover {
 #madotsuki-chair {
   position: absolute;
   width: 150px;
-  bottom: 50px;
+  bottom: 20px;
   right: 5px;
   z-index: 2;
 }

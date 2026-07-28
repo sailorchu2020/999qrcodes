@@ -21,30 +21,137 @@
         <div class="nav-header">Navigation</div>
         <button onclick="document.location='about.html'">About</button>
         <button onclick="document.location='blog.html'">Blog</button>
-        <button>Media Log</button>
         <button>Gallery</button>
         <button>Bowling</button>
         <button>Music</button>
         <button onclick="document.location='999.html'">999qrcodes</button>
-        <button style="border-bottom: none;">Credit</button>
+        <button style="border-bottom: none;">Links</button>
         <div class="nav-header">Off-Site</div>
         <a href="https://neocities.org/site/999qrcodes" target="_blank"><button>Neocities</button></a>
         <a href="https://myanimelist.net/profile/qrcodes" target="_blank"><button style="border-bottom: 1px solid var(--dark);">MyAnimeList</button></a>
+        <!-- <img id="madotsuki-manga" src="images/decorations/madotsuki-manga.png"> -->
+        <div class="calendar">
+          <script LANGUAGE="JavaScript">
+          monthnames = new Array(
+          "January",
+          "Februrary",
+          "March",
+          "April",
+          "May",
+          "June",
+          "July",
+          "August",
+          "September",
+          "October",
+          "November",
+          "Decemeber");
+          var linkcount=0;
+          function addlink(month, day, href) {
+          var entry = new Array(3);
+          entry[0] = month;
+          entry[1] = day;
+          entry[2] = href;
+          this[linkcount++] = entry;
+          }
+          Array.prototype.addlink = addlink;
+          linkdays = new Array();
+          monthdays = new Array(12);
+          monthdays[0]=31;
+          monthdays[1]=28;
+          monthdays[2]=31;
+          monthdays[3]=30;
+          monthdays[4]=31;
+          monthdays[5]=30;
+          monthdays[6]=31;
+          monthdays[7]=31;
+          monthdays[8]=30;
+          monthdays[9]=31;
+          monthdays[10]=30;
+          monthdays[11]=31;
+          todayDate=new Date();
+          thisday=todayDate.getDay();
+          thismonth=todayDate.getMonth();
+          thisdate=todayDate.getDate();
+          thisyear=todayDate.getYear();
+          thisyear = thisyear % 100;
+          thisyear = ((thisyear < 50) ? (2000 + thisyear) : (1900 + thisyear));
+          if (((thisyear % 4 == 0)
+          && !(thisyear % 100 == 0))
+          ||(thisyear % 400 == 0)) monthdays[1]++;
+          startspaces=thisdate;
+          while (startspaces > 7) startspaces-=7;
+          startspaces = thisday - startspaces + 1;
+          if (startspaces < 0) startspaces+=7;
+          document.write("<table border=1 bgcolor=ffecf6 ");
+          document.write("bordercolor=64495c><font color=64495c>");
+          document.write("<tr><td colspan=7><center><strong>"
+          + monthnames[thismonth] + " " + thisyear
+          + "</strong></center></font></td></tr>");
+          document.write("<tr>");
+          document.write("<td align=center>Su</td>");
+          document.write("<td align=center>M</td>");
+          document.write("<td align=center>Tu</td>");
+          document.write("<td align=center>W</td>");
+          document.write("<td align=center>Th</td>");
+          document.write("<td align=center>F</td>");
+          document.write("<td align=center>Sa</td>");
+          document.write("</tr>");
+          document.write("<tr>");
+          for (s=0;s<startspaces;s++) {
+          document.write("<td> </td>");
+          }
+          count=1;
+          while (count <= monthdays[thismonth]) {
+          for (b = startspaces;b<7;b++) {
+          linktrue=false;
+          document.write("<td>");
+          for (c=0;c<linkdays.length;c++) {
+          if (linkdays[c] != null) {
+          if ((linkdays[c][0]==thismonth + 1) && (linkdays[c][1]==count)) {
+          document.write("<a href=\"" + linkdays[c][2] + "\">");
+          linktrue=true;
+          }
+          }
+          }
+          if (count==thisdate) {
+          document.write("<span style='text-shadow: 1px .5px 0px var(--light)';><font color=a54050><strong>");
+          }
+          if (count <= monthdays[thismonth]) {
+          document.write(count);
+          }
+          else {
+          document.write(" ");
+          }
+          if (count==thisdate) {
+          document.write("</span></strong></font>");
+          }
+          if (linktrue)
+          document.write("</a>");
+          document.write("</td>");
+          count++;
+          }
+          document.write("</tr>");
+          document.write("<tr>");
+          startspaces=0;
+          }
+          document.write("</table></p></font>");
+          // End -->
+          </script>
+        </div>
         <img id="pink-plaid" src="images/material/pink-plaid.PNG">
-        <img id="madotsuki-manga" src="images/decorations/madotsuki-manga.png">
       </section>
       <section class="center">
         <h1>Welcome to 999qrcodes!</h1>
         <div class="center-grid">
           <div class="center-top">
-            <img src="images/decorations/yume-blackcat.png" style="margin-right: 10px; height: 70px">
             <p>
-              Welcome to my website. I'm Q! I want to learn how to code, so I have this little site here in hopes of learning <strong>a <em>lot</em></strong>! This site is mostly responsive.
+              Hi, I'm Q! Welcome to 999qrcodes. This is a space for me to display my interests to whoever is willing to see. Enjoy your stay!
             </p>
+            <img src="images/decorations/yume-blackcat.png" style="margin-left: 10px; height: 70px">
           </div>
           <div class="center-left">
             <div class="center-left-content">
-              <iframe width="80%" height="80%" src="https://youtube.com/embed/UNYqwpx7Cys?si=gHqwEr40RUanUeoX"></iframe>
+              <iframe width="90%" height="90%" src="https://www.youtube.com/embed/KEs9C8CwOKs?si=wT58eA70NCZ5c6Rt"></iframe>
             </div>
             <div class="box-header">
               <div class="marquee">
@@ -56,6 +163,8 @@
             <div class="center-right-content">
             <h2>COOL SITES</h2>
               <a href="https://amari-ga-shin-da.neocities.org" target="_blank" rel="noopener noreferrer"><img class="decorative-button zoom" src="buttons/sites/amaributton.gif" alt="amari-ga-shin-da button"></a>
+              <a href="https://anamarriemei.neocities.org/" target="_blank" rel="noopener noreferrer"><img class="decorative-button zoom" src="https://anamarriemei.nekoweb.org/buttons/amm-button.gif" width="88" alt="ana marrie mei button"></a>
+              <a href="https://catboo.neocities.org/" target="_blank" rel="noopener noreferrer"><img class="decorative-button zoom" src="buttons/sites/catboo.png" alt="catboo button"></a>
               <a href="https://kanandraw.neocities.org/" target="_blank" rel="noopener noreferrer"><img class="decorative-button zoom" src="buttons/sites/kananbutton.gif" alt="kanan button"></a>
               <a href="https://lazer-bunny.neocities.org/" target="_blank"><img class="decorative-button zoom" src="buttons/sites/lazerButton_88x31.gif" alt="lazer-bunny button"></a>
               <a href="https://leizy8499.neocities.org/" target="_blank"><img class="decorative-button zoom" src="https://leizy8499.neocities.org/buttons/LEIZY8499.jpeg" alt="leizy8499 button"></a>
